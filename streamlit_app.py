@@ -19,7 +19,7 @@ top: 0px;\
 right: 0px;\
 left: 0px;\
 height: 0.125rem;\
-background-image: linear-gradient(90deg, #d1ff38, #3cba2f);\
+background-image: linear-gradient(90deg, #7E60BF, #E4B1F0);\
 z-index: 999990;\
 }\
 </style>', unsafe_allow_html=True)
