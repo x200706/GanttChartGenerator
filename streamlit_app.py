@@ -8,9 +8,6 @@ from datetime import datetime
 matplotlib.font_manager.fontManager.addfont('TaipeiSansTCBeta-Regular.ttf')
 matplotlib.rc('font', family='Taipei Sans TC Beta')
 
-# 設定圖表樣式與配色
-plt.style.use("seaborn-darkgrid")
-
 # 頁面標題跟寬度設定
 st.set_page_config(page_title="蛇蛇工具箱🐍")
 
@@ -47,9 +44,10 @@ for start, end, event in data:
 # 創建圖表
 fig, ax = plt.subplots(figsize=(10, 4))
 
+colors = ["#7E60BF", "#E4B1F0", "#E4B1F0"]
 # 依據每個任務繪製橫條圖
 for i, (start, end, event) in enumerate(tasks):
-    ax.barh(i, (end - start).days, left=start, height=0.4, align='center')
+    ax.barh(i, (end - start).days, left=start, height=0.4, align='center', color=colors[i % len(colors)])
     ax.text(start, i, event, va='center', ha='left', color='black')
 
 # 設定 Y 軸與 X 軸標籤
