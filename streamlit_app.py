@@ -3,6 +3,19 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from datetime import datetime
 
+# 頁面樣式設定
+st.markdown('<style>\
+.st-emotion-cache-1dp5vir {\
+position: absolute;\
+top: 0px;\
+right: 0px;\
+left: 0px;\
+height: 0.125rem;\
+background-image: linear-gradient(90deg, #d1ff38, #3cba2f);\
+z-index: 999990;\
+}\
+</style>', unsafe_allow_html=True)
+
 # 資料設定
 data = [
     ("201509", "202107", "大學+研究所（文史哲領域）"),
