@@ -8,6 +8,9 @@ from datetime import datetime
 matplotlib.font_manager.fontManager.addfont('TaipeiSansTCBeta-Regular.ttf')
 matplotlib.rc('font', family='Taipei Sans TC Beta')
 
+# 設定圖表樣式與配色
+plt.style.use("seaborn-darkgrid")
+
 # 頁面標題跟寬度設定
 st.set_page_config(page_title="蛇蛇工具箱🐍")
 
