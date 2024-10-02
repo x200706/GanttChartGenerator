@@ -41,11 +41,9 @@ if menu == "甘特圖產生器":
     colors_from_user = st.text_input("甘特圖配色", placeholder = "#917FB3,#E5BEEC,#FDE2F3")
     if st.button("生成甘特圖"):
         # 資料設定
-        data = [
-            ("201509", "202107", "大學+研究所（文史哲領域）"),
-            ("202107", "202109", "協助學校教授工作"),
-            ("202109", "202202", "台大資工系系辦助理"),
-        ]
+        data = []
+        for line in data_from_user.split("\n"):
+            data.append(tuple(line.split(",")))
 
         # 轉換時間格式為 datetime 物件
         def convert_to_date(date_str):
