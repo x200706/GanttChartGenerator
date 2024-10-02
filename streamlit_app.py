@@ -44,7 +44,7 @@ for start, end, event in data:
 # 創建圖表
 fig, ax = plt.subplots(figsize=(10, 4))
 
-colors = ["#7E60BF", "#E4B1F0", "#FFE1FF"]
+colors = ["#917FB3", "#E5BEEC", "#FDE2F3"]
 # 依據每個任務繪製橫條圖
 for i, (start, end, event) in enumerate(tasks):
     ax.barh(i, (end - start).days, left=start, height=0.4, align='center', color=colors[i % len(colors)])
