@@ -38,7 +38,7 @@ if menu == "甘特圖產生器":
     data_from_user = st.text_area("輸入事件與區間",placeholder = """201509, 202107, 大學+研究所（文史哲領域）
 202107, 202109, 協助學校教授工作
     """)
-    colors_from_user = st.text("甘特圖配色",placeholder ="#917FB3,#E5BEEC,#FDE2F3")
+    colors_from_user = st.text("甘特圖配色", "#917FB3,#E5BEEC,#FDE2F3")
     if st.button("生成甘特圖"):
         # 資料設定
         data = [
