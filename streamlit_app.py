@@ -3,6 +3,10 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from datetime import datetime
 
+# 設置matplotlib字體
+matplotlib.font_manager.fontManager.addfont('TaipeiSansTCBeta-Regular.ttf')
+matplotlib.rc('font', family='Taipei Sans TC Beta')
+
 # 頁面標題跟寬度設定
 st.set_page_config(page_title="蛇蛇工具箱🐍")
 
