@@ -72,7 +72,7 @@ if menu == "甘特圖產生器":
         plt.xticks(rotation=45)
 
         # 加入標題與調整排版
-        plt.title("生涯經歷甘特圖")
+        plt.title("甘特圖")
         plt.xlabel("時間")
         plt.tight_layout()
 
