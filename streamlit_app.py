@@ -58,7 +58,9 @@ if menu == "甘特圖產生器":
             # 創建圖表
             fig, ax = plt.subplots(figsize=(10, 4))
 
-            colors = ["#917FB3", "#E5BEEC", "#FDE2F3"]
+            colors = []
+            for e in colors_from_user.split(","):
+                colors.append(e)
             # 依據每個任務繪製橫條圖
             for i, (start, end, event) in enumerate(tasks):
                 ax.barh(i, (end - start).days, left=start, height=0.4, align='center', color=colors[i % len(colors)])
