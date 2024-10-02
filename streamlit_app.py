@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_option_menu import option_menu
 import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
