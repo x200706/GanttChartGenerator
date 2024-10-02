@@ -35,7 +35,10 @@ with st.sidebar:
 
 if menu == "甘特圖產生器":
     st.subheader("甘特圖產生器")
-    input1 = st.text_area("輸入事件與區間", "201509, 202107, 大學+研究所（文史哲領域）")
+    input1 = st.text_area("輸入事件與區間",placeholder = """
+    201509, 202107, 大學+研究所（文史哲領域）
+    202107, 202109, 協助學校教授工作
+    """)
     if st.button("生成甘特圖"):
         pass
 
