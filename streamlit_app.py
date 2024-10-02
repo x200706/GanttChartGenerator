@@ -3,6 +3,9 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from datetime import datetime
 
+# 頁面標題跟寬度設定
+st.set_page_config(page_title="蛇蛇工具箱🐍")
+
 # 頁面樣式設定
 st.markdown('<style>\
 .st-emotion-cache-1dp5vir {\
